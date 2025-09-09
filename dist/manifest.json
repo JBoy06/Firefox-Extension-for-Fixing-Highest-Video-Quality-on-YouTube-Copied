@@ -1,13 +1,14 @@
 {
   "name": "youtube-video-quality-fixer",
-  "description": "Firefox Extension for Fixing Highest Video Quality on YouTube.",
-  "version": "0.0.2",
-  "manifest_version": 2,
+  "description": "Chrome Extension for Fixing Highest Video Quality on YouTube.",
+  "version": "0.0.12",
+  "manifest_version": 3,
   "icons": {
     "128": "icon.png"
   },
   "background": {
-    "scripts": ["service-worker-loader.js"]
+    "scripts": ["service-worker-loader.js"],
+    "type": "module"
   },
   "content_scripts": [
     {
@@ -22,16 +23,25 @@
       ]
     }
   ],
-  "browser_action": {
+  "action": {
     "default_icon": "icon.png",
     "default_popup": "src/popup.html"
   },
   "permissions": [
-    "storage",
+    "storage"
+  ],
+  "host_permissions": [
     "https://www.youtube.com/*"
   ],
   "web_accessible_resources": [
-    "assets/content-script.ts-D77n86b7.js"
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "resources": [
+        "assets/content-script.ts-D77n86b7.js"
+      ]
+    }
   ],
   "browser_specific_settings": {
     "gecko": {
