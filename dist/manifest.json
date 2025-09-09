@@ -1,7 +1,7 @@
 {
   "name": "youtube-video-quality-fixer",
   "description": "Firefox Extension for Fixing Highest Video Quality on YouTube.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "icons": {
     "128": "icon.png"
