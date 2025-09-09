@@ -31,14 +31,7 @@
     "https://www.youtube.com/*"
   ],
   "web_accessible_resources": [
-    {
-      "matches": [
-        "https://www.youtube.com/*"
-      ],
-      "resources": [
-        "assets/content-script.ts-D77n86b7.js"
-      ]
-    }
+    "assets/content-script.ts-D77n86b7.js"
   ],
   "browser_specific_settings": {
     "gecko": {
