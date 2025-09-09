@@ -46,7 +46,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "your-addon-id@example.com",
-      "update_url": "https://your-domain.com/updates.json"
+      "update_url": "https://raw.githubusercontent.com/JBoy06/Firefox-Extension-for-Fixing-Highest-Video-Quality-on-YouTube-Copied/edit/main/dist/updates.json"
     }
   }
 }
